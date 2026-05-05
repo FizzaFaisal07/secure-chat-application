@@ -6,8 +6,8 @@ import time
 import base64
 
 # Configuration - Bind to specific IP (REMOVED SPACES)
-host = '0.0.0.0'  # Listen on all network interfaces
-port = int(os.environ.get('PORT', 5000))
+HOST = '0.0.0.0'
+PORT = int(os.environ.get('PORT', 5000))
 
 # Predefined users (username: password)
 AUTHENTICATED_USERS = {
