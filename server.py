@@ -5,8 +5,8 @@ import time
 import base64
 
 # Configuration - Bind to specific IP (REMOVED SPACES)
-HOST = '192.168.10.6'  # Removed space before IP
-PORT = 8000
+HOST = "127.0.0.1"  # Removed space before IP
+PORT = 12345
 
 # Predefined users (username: password)
 AUTHENTICATED_USERS = {
