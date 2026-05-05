@@ -1,12 +1,13 @@
 import socket
 import threading
+import os
 import json
 import time
 import base64
 
 # Configuration - Bind to specific IP (REMOVED SPACES)
-HOST = "127.0.0.1"  # Removed space before IP
-PORT = 12345
+host = '0.0.0.0'  # Listen on all network interfaces
+port = int(os.environ.get('PORT', 5000))
 
 # Predefined users (username: password)
 AUTHENTICATED_USERS = {

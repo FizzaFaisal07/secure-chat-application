@@ -29,8 +29,8 @@ except ImportError:
     print("PyAudio not available - voice messages disabled")
 
 # Configuration - Fixed Server IP (MUST MATCH SERVER IP)
-SERVER_IP = '127.0.0.1'  # Changed to match server IP
-PORT = 12345 # Changed to match server port
+SERVER_IP = os.environ.get('SERVER_HOST', '0.0.0.0')
+PORT = int(os.environ.get('PORT', 10000))
 CHUNK = 1024
 # Audio Format Settings
 FORMAT = pyaudio.paInt16 if AUDIO_AVAILABLE else None
