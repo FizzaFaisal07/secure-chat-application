@@ -26,5 +26,4 @@ A real-time secure chat application with video/audio calls, file sharing, and gr
 4. Run client: `python client.py`
 5. Login with: alice/12345, bob/456789
 
-## Screenshots
-(Add screenshots here)
+
